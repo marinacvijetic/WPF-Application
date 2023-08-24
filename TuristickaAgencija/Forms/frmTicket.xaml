@@ -1,0 +1,36 @@
+﻿<Window x:Name="frmTicket1" x:Class="TuristickaAgencija.Forms.frmTicket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TuristickaAgencija.Forms"
+        mc:Ignorable="d"
+        Title="Add\Update Ticket" Height="550" Width="700">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/TuristickaAgencija;component/Graphics/blue_background_picture_2_169441.jpg"/>
+        </Grid.Background>
+        <Label x:Name="lblDestination" Content="Destination:" HorizontalAlignment="Left" Margin="54,60,0,0" VerticalAlignment="Top" Width="250"/>
+        <Label x:Name="lblSeatNumber" Content="Seat Number:" HorizontalAlignment="Left" Margin="54,173,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtDestination" HorizontalAlignment="Left" Height="26" Margin="392,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtSeatNumber" HorizontalAlignment="Left" Height="26" Margin="392,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <StackPanel x:Name="spTimetable" Orientation="Vertical" HorizontalAlignment="Stretch" Height="141" Margin="0,227,0,0" VerticalAlignment="Top">
+            <StackPanel Height="64" Margin="0,5,0,0" VerticalAlignment="Top">
+                <Label x:Name="lblDeparture" Content="Departure:" Height="26" Width="250" VerticalAlignment="Top" Margin="54,0,419,0"/>
+                <DatePicker x:Name="dpDeparture" AllowDrop="True"  SelectedDateFormat="Long" VerticalAlignment="Top" Margin="392,-25,50,0" Height="26"/>
+            </StackPanel>
+            <StackPanel Height="64" Margin="0,0,0,0" VerticalAlignment="Top">
+                <Label x:Name="lblArrival" Content="Arrival:" Height="26" VerticalAlignment="Top" Margin="55,0,387,0"/>
+                <DatePicker x:Name="dpArrival" AllowDrop="True" SelectedDateFormat="Long" VerticalAlignment="Top" Margin="392,-25,50,0"/>
+
+            </StackPanel>
+
+        </StackPanel>
+        <Label x:Name="lblTicketPrice" Content="Ticket price:" HorizontalAlignment="Left" Margin="54,368,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtTicketPrice" HorizontalAlignment="Left" Height="26" Margin="392,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" />
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="54,441,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="btnSave_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="472,441,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="btnCancel_Click"/>
+        <Label x:Name="TypeName" Content="Type of transport" HorizontalAlignment="Left" Margin="54,113,0,0" VerticalAlignment="Top" Width="250"/>
+        <ComboBox x:Name="cbxType" DisplayMemberPath="Type of transport" SelectedValuePath="TypeID" HorizontalAlignment="Left" Margin="392,113,0,0" VerticalAlignment="Top" Width="250" Height="26"/>
+    </Grid>
+</Window>

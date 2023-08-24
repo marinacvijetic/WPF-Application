@@ -1,0 +1,31 @@
+﻿<Window x:Name="frmCustomer1" x:Class="TuristickaAgencija.Forms.frmCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TuristickaAgencija.Forms"
+        mc:Ignorable="d"
+        Title="Add\Update Customer" Height="550" Width="700">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/TuristickaAgencija;component/Graphics/blue_background_picture_2_169441.jpg"/>
+        </Grid.Background>
+        <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Margin="54,34,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.277,0.152" Height="26" Width="250"/>
+        <Label x:Name="lblSurname" Content="Surname:" HorizontalAlignment="Left" Margin="54,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.651,0.412" Width="250"/>
+        <Label x:Name="lblJMBG" Content="JMBG:" HorizontalAlignment="Left" Margin="54,138,0,0" VerticalAlignment="Top" Width="250"/>
+        <Label x:Name="lblCity" Content="City:" HorizontalAlignment="Left" Margin="54,189,0,0" VerticalAlignment="Top" Width="250"/>
+        <Label x:Name="lblAdress" Content="Adress:" HorizontalAlignment="Left" Margin="54,242,0,0" VerticalAlignment="Top" Width="250"/>
+        <Label x:Name="lblContact" Content="Contact:" HorizontalAlignment="Left" Margin="54,294,0,0" VerticalAlignment="Top" Width="250"/>
+        <Label x:Name="lblCardNumber" Content="Card number:" HorizontalAlignment="Left" Margin="54,347,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.124,-0.119" Width="250"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="26" Margin="392,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" RenderTransformOrigin="0.392,-0.159"/>
+        <TextBox x:Name="txtSurname" HorizontalAlignment="Left" Height="26" Margin="392,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" RenderTransformOrigin="0.23,0.288"/>
+        <TextBox x:Name="txtJMBG" HorizontalAlignment="Left" Height="26" Margin="392,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtCity" HorizontalAlignment="Left" Height="26" Margin="392,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtAdress" HorizontalAlignment="Left" Height="26" Margin="392,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtContact" HorizontalAlignment="Left" Height="26" Margin="392,294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtCardNumber" HorizontalAlignment="Left" Height="26" Margin="392,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="54,440,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="btnSave_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="472,440,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="btnCancel_Click"/>
+
+    </Grid>
+</Window>

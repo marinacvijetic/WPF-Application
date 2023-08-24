@@ -1,0 +1,29 @@
+﻿<Window x:Name="frmHotel1" x:Class="TuristickaAgencija.Forms.frmHotel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TuristickaAgencija.Forms"
+        mc:Ignorable="d"
+        Title="Add\Update Hotel" Height="550" Width="700">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/TuristickaAgencija;component/Graphics/blue_background_picture_2_169441.jpg"/>
+        </Grid.Background>
+        <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Margin="54,44,0,0" VerticalAlignment="Top" Width="250"/>
+        <Label x:Name="lblAdress" Content="Adress:" HorizontalAlignment="Left" Margin="54,91,0,0" VerticalAlignment="Top" Width="250"/>
+        <Label x:Name="lblRoomNumber" Content="Room number:" HorizontalAlignment="Left" Margin="54,143,0,0" VerticalAlignment="Top" Width="250"/>
+        <Label x:Name="lblContact" Content="Contact:" HorizontalAlignment="Left" Margin="54,195,0,0" VerticalAlignment="Top" Width="250"/>
+        <Label x:Name="lblPrice" Content="Price per night:" HorizontalAlignment="Left" Margin="54,245,0,0" VerticalAlignment="Top" Width="250"/>
+        <Label x:Name="lblDestination" Content="Destination:" HorizontalAlignment="Left" Margin="54,296,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="26" Margin="392,44,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="250" RenderTransformOrigin="0.458,3.73"/>
+        <TextBox x:Name="txtAdress" HorizontalAlignment="Left" Height="26" Margin="392,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtRoomNumber" HorizontalAlignment="Left" Height="26" Margin="392,143,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtContact" HorizontalAlignment="Left" Height="26" Margin="392,195,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="26" Margin="392,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <ComboBox x:Name="cbxDestination" DisplayMemberPath="Destination" SelectedValuePath="DestinationID" HorizontalAlignment="Left" Margin="392,296,0,0" VerticalAlignment="Top" Width="250" Height="26"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="54,440,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="btnSave_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="472,440,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="btnCancel_Click"/>
+
+    </Grid>
+</Window>

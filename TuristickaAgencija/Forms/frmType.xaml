@@ -1,0 +1,19 @@
+﻿<Window x:Name="frmType1" x:Class="TuristickaAgencija.Forms.frmType"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TuristickaAgencija.Forms"
+        mc:Ignorable="d"
+        Title="Add\Update Type Of Transport" Height="300" Width="700">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/TuristickaAgencija;component/Graphics/blue_background_picture_2_169441.jpg"/>
+        </Grid.Background>
+        <Label x:Name="lblTransportType" Content="Transport type:" HorizontalAlignment="Left" Margin="54,63,0,0" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="txtTransportType" HorizontalAlignment="Left" Height="26" Margin="392,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="54,190,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="btnSave_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="472,190,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="btnCancel_Click"/>
+    </Grid>
+</Window>

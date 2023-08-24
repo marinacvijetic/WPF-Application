@@ -1,0 +1,89 @@
+﻿<Window x:Name="dataGrid" x:Class="TuristickaAgencija.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TuristickaAgencija"
+        
+        mc:Ignorable="d"
+        
+    
+    Title="Travel Agency"  Height="550" Width="950">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Graphics/tourism.jpg"/>
+        </Grid.Background>
+        <DataGrid x:Name="dataGridCentral" HorizontalAlignment="Center" Height="auto"  VerticalAlignment="Center" Width="auto" AlternatingRowBackground="Aqua" IsReadOnly="True" CanUserAddRows="False" 
+                  SelectionUnit="FullRow" SelectionMode="Single"/>
+        <StackPanel HorizontalAlignment="Center" Height="50"  VerticalAlignment="Top" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnBooking" Content="Booking" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="45" Click="btnBooking_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Graphics/$RMW034V.png"/>
+                </Button.Background>
+                <Button.BindingGroup>
+                    <BindingGroup/>
+                </Button.BindingGroup>
+            </Button>
+            <Button x:Name="btnHotels" Content="Hotels" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="45" Click="btnHotels_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Graphics/$RMW034V.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnCustomers" Content="Customers" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="45" Click="btnCustomers_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Graphics/$RMW034V.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnTickets" Content="Tickets" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="45" Click="btnTickets_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Graphics/$RMW034V.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnEmployees" Content="Employees" FontSize="15" HorizontalAlignment="Left" Width="95" Margin="0,0,0,5" Click="btnEmployees_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Graphics/$RMW034V.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnTypes" Content="Types of transport" FontSize="15" HorizontalAlignment="Left" Width="140" Margin="0,0,0,5" Click="btnTypes_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Graphics/$RMW034V.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnTransport" Content="Transport" FontSize="15" HorizontalAlignment="Left" Width="90" Margin="0,0,0,5" Click="btnTransport_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Graphics/$RMW034V.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnOU" Content="Oranisational Units" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="145" Height="45" Click="btnOU_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Graphics/$RMW034V.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnDestinations" Content="Destinations" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="45" Click="btnDestinations_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Graphics/$RMW034V.png"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Height="auto"  VerticalAlignment="Bottom" Width="auto">
+            <Button x:Name="btnAdd" Content="Add" FontSize="18" Width="130" Height="40" Click="btnAdd_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Graphics/$RMW034V.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnUpdate" Content="Update" FontSize="18" Width="130" Height="40" Click="btnUpdate_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Graphics/$RMW034V.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnDelete" Content="Delete" FontSize="18" Width="130" Height="40" Click="btnDelete_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Graphics/$RMW034V.png"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
+
+    </Grid>
+</Window>
